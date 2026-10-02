@@ -15,19 +15,15 @@ body {
     background-repeat: no-repeat; /* Evita que el degradado se repita */
     background-attachment: fixed; /* El degradado cubre siempre toda la ventana */
 
-    font-family: Baskervville, serif;
     color: rgb(60, 40, 40);
 
-    /* Centrado absoluto con Grid */
-    display: grid;
-    place-items: center;
-    text-align: center;
 }
 
 .boton-verde {
     background-color: rgb(4, 58, 4);
     border-color: rgb(4, 58, 4);
     color: white;
+    font-weight: bold;
 }
 
 
