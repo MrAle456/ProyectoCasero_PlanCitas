@@ -6,22 +6,9 @@
     <title>Mi App de Citas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <style>
-      body{
-        background-image: url('tulipanes.avif');
-        background-size: cover;
-        color: whitesmoke;
-      }
-
-      
-
-    </style>
-
-
   </head>
-
-  <body class="pagina-inicio">
-
+  <body>
+    
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-superior">
   <div class="container-fluid">
@@ -35,7 +22,7 @@
           <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="agenda.html">Agenda</a>
+          <a class="nav-link" href="agenda.html" aria-disabled="true" >Agenda</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="homepage.html">Homepage</a>
@@ -44,15 +31,16 @@
     </div>
   </div>
 </nav>
-
-    <!--Contenido Principal-->
-    <main class="contenido-principal">
-      <h1>Hola Amor mio ( ˘ ³˘) 💕</h1>
-      <h3>Bienvenida a Mi App de Citas</h3>
-      <button type="button" class="btn boton-verde" onclick="window.location.href='agenda.html'" id="boton-verde">
-        Dale Click Para Continuar
-      </button>
-    </main>
+    
+    <div class="container my-5">
+      <div class="card">
+        
+        <div class="card-body">
+          <h5 class="card-title">Hola Mi Amor!!</h5>
+          <p class="card-text">Cuales son los planes de Hoy?</p>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>

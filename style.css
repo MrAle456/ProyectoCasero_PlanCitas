@@ -2,6 +2,10 @@
     Texto: rgb(60, 40, 40);
 */
 
+:root {
+    --color-cafe: rgb(60, 40, 40);
+}
+
 html {
     height: 100%;
 }
@@ -11,24 +15,58 @@ body {
     min-height: 100vh; /* Ocupa todo el alto de la pantalla */
     box-sizing: border-box;
 
-    background-image: radial-gradient(circle, #eca2e4, #f8b6fa);
+    background-image: radial-gradient(circle, #eca2e4, #ffe1ff);
     background-repeat: no-repeat; /* Evita que el degradado se repita */
     background-attachment: fixed; /* El degradado cubre siempre toda la ventana */
-
-    color: rgb(60, 40, 40);
-
+    color: var(--color-cafe);
+    
 }
 
+.pagina-inicio {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navbar-superior {
+    width: 100%;
+    flex-shrink: 0;
+    background-color: var(--color-cafe);
+}
+
+.navbar-superior .navbar-brand,
+.navbar-superior .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-superior .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.contenido-principal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-cafe);
+}
+
+
+
 .boton-verde {
-    background-color: rgb(4, 58, 4);
-    border-color: rgb(4, 58, 4);
+    background-color: rgb(11, 91, 11);
+    border-color: rgb(11, 91, 11);
     color: white;
     font-weight: bold;
+
 }
 
 
 .boton-verde:hover {
-    background-color: rgb(8, 90, 8);
-    border-color: rgb(8, 90, 8);
+    background-color: rgb(16, 118, 16);
+    border-color: rgb(16, 118, 16);
     color: white;
 }
